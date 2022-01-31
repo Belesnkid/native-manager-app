@@ -46,7 +46,7 @@ export default function LoginScreen(props:{updateUser:Function}){
         <TextInput style={{backgroundColor:'#fff', padding:5}} onChangeText={t => setUsername(t)} placeholder='Username'/>
         </View>
         <View style={{padding: 5, width:'90%', paddingBottom:20}}>
-        <TextInput style={{backgroundColor:'#fff',padding: 5}} onChangeText={t => setPassword(t)} placeholder='Password'/>
+        <TextInput secureTextEntry={true} style={{backgroundColor:'#fff',padding: 5}} onChangeText={t => setPassword(t)} placeholder='Password'/>
         </View>
         <Button onPress={login} title='Login'/>
     </View>)
